@@ -30,14 +30,14 @@ class ProductController extends Controller
     }
 
     public function edit($id) {
-        $product = Product::find($id)->first();
+        $product = Product::find($id);
         return view('products.edit')
         ->withProduct($product)
         ;
     }
 
     public function update($id, ProductRequest $request) {
-        $product = Product::find($id)->first();
+        $product = Product::find($id);
         $product->name = $request->input('name');
         $product->price = $request->input('price');
         $product->save();
