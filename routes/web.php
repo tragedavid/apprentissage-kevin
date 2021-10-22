@@ -26,6 +26,8 @@ require __DIR__.'/auth.php';
 Route::get('/products', 'ProductController@list');
 Route::get('/product/create', 'ProductController@create');
 Route::post('/product/insert', 'ProductController@insert');
+Route::get('/product/edit/{id}', 'ProductController@edit');
+Route::post('/product/update/{id}', 'ProductController@update');
 Route::delete('/product/delete/{id}', 'ProductController@delete');
 
 
