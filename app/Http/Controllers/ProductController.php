@@ -23,10 +23,7 @@ class ProductController extends Controller
     }
 
     public function create() {
-        $test = "deazrgy";
-        return view('products.create')
-        ->withTest($test)
-        ;
+        return view('products.create');
     }
 
     public function edit($id) {
