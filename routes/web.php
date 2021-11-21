@@ -30,4 +30,9 @@ Route::get('/product/edit/{id}', 'ProductController@edit');
 Route::post('/product/update/{id}', 'ProductController@update');
 Route::delete('/product/delete/{id}', 'ProductController@delete');
 
-
+Route::get('/categories', 'CategoryController@list');
+Route::get('/category/create', 'CategoryController@create');
+Route::post('/category/insert', 'CategoryController@insert');
+Route::get('/category/edit/{id}', 'CategoryController@edit');
+Route::post('/category/update/{id}', 'CategoryController@update');
+Route::delete('/category/delete/{id}', 'CategoryController@delete');
