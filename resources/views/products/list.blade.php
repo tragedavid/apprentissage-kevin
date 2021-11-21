@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('content')
     
+<a  href="{{url('/product/create')}}"><h1 class="alert alert-primary text-center">Add a product</h1></a>
+
 @foreach ($products as $product)
     {{$product->name}} | {{$product->price}}€ 
     <form action="{{url('/product/edit/'.$product->id)}}" method="get">
