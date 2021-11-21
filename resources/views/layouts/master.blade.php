@@ -36,7 +36,7 @@
 
         <nav class="navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{ url('/images/formacitron.png') }}" alt="logo formacitron - formations pour gens pressés">
+                <img src="{{ url('/images/logo.png') }}" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
                   </a>
                 </div>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{url('/formations')}}">Nos formations</a>
+                  <a class="nav-link" href="{{url('/products')}}">Nos produits</a>
                 </li>
               </ul>
             </div>
@@ -66,7 +66,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="{{url('/courses')}}">Formations</a>
+        <a class="nav-link" href="{{url('/products')}}">Produits</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{url('/categories')}}">Catégories</a>

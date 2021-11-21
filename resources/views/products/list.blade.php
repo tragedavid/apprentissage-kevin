@@ -1,3 +1,6 @@
+@extends('layouts.master')
+@section('content')
+    
 @foreach ($products as $product)
     {{$product->name}} | {{$product->price}}€ 
     <form action="{{url('/product/edit/'.$product->id)}}" method="get">
@@ -10,3 +13,6 @@
     </form>   
     <br>
 @endforeach
+
+@endsection
+
