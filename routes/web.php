@@ -36,3 +36,5 @@ Route::post('/category/insert', 'CategoryController@insert');
 Route::get('/category/edit/{id}', 'CategoryController@edit');
 Route::post('/category/update/{id}', 'CategoryController@update');
 Route::delete('/category/delete/{id}', 'CategoryController@delete');
+
+Route::post('/ajax/category-childs/{id}', 'AjaxController@categoryChilds');
